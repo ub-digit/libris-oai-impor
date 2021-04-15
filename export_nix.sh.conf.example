@@ -1,0 +1,4 @@
+koha_path="/home/koha/koha-production/current"
+koha_instance="koha"
+koha_shell_path="/path/to/koha-shell"
+data_dir="/opt/export_nix"
