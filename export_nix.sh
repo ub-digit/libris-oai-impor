@@ -39,7 +39,7 @@ then
     # Loading can fail, accept that.
     set +e
     # Ladda
-    $koha_shell_path -c cd\ $koha_path/misc/migration_tools\ \&\&\ ./bulkmarcimport.pl\ -b\ -file\ \"$filepath\"\ -insert\ -update\ -c\=MARC21\ -tomarcplugin\ \"Koha::Plugin::Se::Ub::Gu::MarcImport\" $koha_instance
+    $koha_shell_path -c cd\ $koha_path/misc/migration_tools\ \&\&\ ./bulkmarcimport.pl\ -b\ -file\ \"$filepath\"\ -match_record_id\ -insert\ -update\ -c\=MARC21\ -tomarcplugin\ \"Koha::Plugin::Se::Ub::Gu::MarcImport\" $koha_instance
     set -e
 
     mkdir -p "${data_dir}/archive/${TODAY}"
